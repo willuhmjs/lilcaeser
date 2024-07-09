@@ -1,3 +1,7 @@
+use lilcaeser::caeser;
+
 fn main() {
-    println!("Hello, world!");
+    let mut input = String::new();
+    std::io::stdin().read_line(&mut input).expect("String");
+    println!("{}", caeser(input.trim(), -3))
 }
